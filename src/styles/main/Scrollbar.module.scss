@@ -1,0 +1,43 @@
+@import "../globals";
+
+.Scrollbar {
+    position: fixed;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    a {
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    a:last-of-type {
+        margin-bottom: 0;
+    }
+
+    span {
+        border: 2px $light solid;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 100px;
+        cursor: pointer;
+
+        opacity: 0;
+        transition: all $fastInSlowOut 0.3s;
+        animation: scrollbarIn ease-in-out 0.5s forwards;
+    }
+}
+
+.Active {
+    background-color: $light;
+}
+
+@keyframes scrollbarIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

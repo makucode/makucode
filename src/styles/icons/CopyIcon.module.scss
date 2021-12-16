@@ -1,0 +1,18 @@
+@import "../globals";
+
+.CopyIcon:active {
+    transform: scale(0.95);
+}
+
+.CopyIconHover {
+    position: absolute;
+    transform: translate(calc(-50% - 9px), 30px);
+    pointer-events: none;
+    color: $light;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: $radiusL;
+    transition: all ease-in-out 0.15s;
+    width: max-content;
+    font-size: 0.825rem;
+}

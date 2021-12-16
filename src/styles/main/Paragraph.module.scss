@@ -1,0 +1,51 @@
+@import "../globals";
+
+.IndexCaptionText {
+    span:nth-child(2) {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+    }
+}
+
+.IndexHtml,
+.IndexHtml2 {
+    color: $mid;
+    font-size: 1.5rem;
+}
+
+.IndexHtml {
+    margin-left: 0;
+    animation: leftIn 1s $fastInSlowOut forwards;
+    color: $blue;
+}
+
+.IndexHtml2 {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    animation: rightIn 1s $fastInSlowOut forwards;
+    color: $blue;
+}
+
+@keyframes leftIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

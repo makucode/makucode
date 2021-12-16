@@ -1,0 +1,30 @@
+// Fonts
+
+$mono: "Major Mono Display", monospace;
+$sans: "Ubuntu", sans-serif;
+
+// Colors
+
+$light: #e5e5e5;
+$mid: #9c9c9c;
+$dark: #1a1a1a;
+$blue: #559ad3;
+$lightBlue: #a2e2fe;
+$orange: #cc8f77;
+
+// Borders
+
+$radiusL: 10px;
+$borderMain: $light 1px solid;
+
+// Easings
+
+$fastInSlowOut: cubic-bezier(0, 0.8, 0.29, 0.9);
+
+// Transitions
+
+$transNormal: all ease-in-out 0.15s;
+
+// Shadows
+
+$shadowMain: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
