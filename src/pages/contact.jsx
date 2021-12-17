@@ -62,7 +62,10 @@ export default function Contact() {
                             <GithubIcon />
                         </a>
                     </Link>
-                    <Link href="https://github.com/makucode" passHref>
+                    <Link
+                        href="https://www.linkedin.com/in/maximilian-friedrich-266168226/"
+                        passHref
+                    >
                         <a
                             className={styles.ContactIcon}
                             style={{ animationDelay: "0.4s" }}

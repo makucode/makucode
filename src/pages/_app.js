@@ -6,13 +6,14 @@ import {
 } from "react-parallax-mouse";
 import Background from "../components/main/Background";
 import Header from "../components/main/Header";
-import { fadeInScale } from "../utils/animations";
+import Footer from "../components/main/Footer";
+import { fadeInBlur } from "../utils/animations";
 import "../styles/main.scss";
 
 function App({ Component, pageProps }) {
     const router = useRouter();
 
-    const animations = fadeInScale;
+    const animations = fadeInBlur;
 
     return (
         <MouseParallaxContainer>
@@ -40,6 +41,10 @@ function App({ Component, pageProps }) {
                     </motion.div>
                 </AnimatePresence>
             </MouseParallaxChild>
+
+            {/*             <MouseParallaxChild factorX={0.02} factorY={0.025}>
+                <Footer />
+            </MouseParallaxChild> */}
 
             <MouseParallaxChild
                 factorX={0.01}

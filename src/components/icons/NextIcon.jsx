@@ -8,19 +8,12 @@ const NextIcon = () => {
             <svg
                 height="48px"
                 viewBox="0 0 207 124"
-                version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 onMouseLeave={() => setIconHover(false)}
                 onMouseEnter={() => setIconHover(true)}
             >
-                <g
-                    id="Page-1"
-                    stroke="none"
-                    strokeWidth={1}
-                    fill="none"
-                    fillRule="evenodd"
-                >
+                <g id="Page-1" stroke="none" strokeWidth={1} fillRule="evenodd">
                     <g
                         id="Black-Next.js"
                         transform="translate(-247.000000, -138.000000)"

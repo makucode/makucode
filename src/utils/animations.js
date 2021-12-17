@@ -1,4 +1,19 @@
-export const fadeInScale = {
+export const fadeInUp = {
+    pageInitial: {
+        opacity: 0,
+        transform: "translateY(50px)",
+    },
+    pageAnimate: {
+        opacity: 1,
+        transform: "translateY(0px)",
+    },
+    pageExit: {
+        opacity: 0,
+        transform: "translateY(50px)",
+    },
+};
+
+export const fadeInBlur = {
     pageInitial: {
         opacity: 0,
         filter: "blur(3px)",
@@ -10,5 +25,20 @@ export const fadeInScale = {
     pageExit: {
         opacity: 0,
         filter: "blur(3px)",
+    },
+};
+
+export const fadeInScale = {
+    pageInitial: {
+        opacity: 0,
+        transform: "scale(1)",
+    },
+    pageAnimate: {
+        opacity: 1,
+        transform: "scale(1)",
+    },
+    pageExit: {
+        opacity: 0,
+        transform: "scale(0.95)",
     },
 };

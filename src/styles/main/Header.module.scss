@@ -8,7 +8,7 @@
     border: $borderMain;
     border-radius: $radiusL;
     padding: 0 2rem;
-    width: 80%;
+    width: 80vw;
 }
 
 .HeaderTitle {
@@ -28,7 +28,7 @@
             typing 1s steps(8, end);
     }
 
-    h1:hover {
+    .StopBlink {
         border-right: 2px solid transparent;
     }
 
