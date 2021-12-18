@@ -1,14 +1,14 @@
-## makucode
+# makucode
 
-Web Developer from Hannover, Germany.
-Currently focusing on Fullstack-Dev with React and Node.
+Web Developer from Hannover, Germany.  
+Currently focusing on Fullstack-Dev with React and Node.  
 Always interested in new projects.
 
-## makuco.de
+## makuco.de - Homepage/Portfolio
 
-[makuco.de](makuco.de) is my personal Homepage and Portfolio.
+[makuco.de](makuco.de)
 
-## Startup
+### makuco.de - Startup
 
 Dev Server:
 
