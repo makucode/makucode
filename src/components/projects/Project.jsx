@@ -48,6 +48,7 @@ const Project = ({ name, text, imgs, alts, icons, url }) => {
                                 alt={alts[0]}
                                 layout="responsive"
                                 objectFit="contain"
+                                loading="eager"
                                 priority
                             />
                         )}
@@ -57,6 +58,7 @@ const Project = ({ name, text, imgs, alts, icons, url }) => {
                                 alt={alts[1]}
                                 layout="responsive"
                                 objectFit="contain"
+                                loading="eager"
                                 priority
                             />
                         )}

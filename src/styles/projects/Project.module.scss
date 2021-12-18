@@ -35,7 +35,9 @@
 
 .ProjectTechnologies {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 2rem;
+    row-gap: 1rem;
 }
 
 .ProjectTechnologiesIcon {
@@ -89,22 +91,12 @@
 }
 
 @media only screen and (max-width: $s) {
-    .Project {
-        width: 90vw;
-    }
-
     .ProjectInfo {
-        height: fit-content;
-    }
-
-    .ProjectImg {
         width: 90vw;
     }
-}
 
-@media only screen and (max-width: $s) {
     .Project {
-        height: calc(100vh - 70px - 2rem);
+        height: calc(100vh - 70px - 4rem) !important;
     }
 
     .ProjectImg {
@@ -114,6 +106,25 @@
 
 @media only screen and (max-height: $hm) {
     .Project {
-        height: calc(100vh - 70px - 2rem);
+        height: calc(100vh - 70px - 4rem) !important;
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+
+    .ProjectInfo {
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    .Project {
+        height: fit-content !important;
+        margin-bottom: 8rem;
     }
 }

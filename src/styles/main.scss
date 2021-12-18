@@ -132,7 +132,23 @@ a:hover {
     font-size: 0.825rem;
 }
 
+@media only screen and (max-width: $m) {
+    .Parallax {
+        transform: translate(0) !important;
+    }
+}
+
 @media only screen and (max-width: $s) {
+    .Wrapper {
+        width: 90%;
+    }
+
+    #Heading {
+        height: calc(100vh - 70px - 1rem) !important;
+        max-height: calc(100vh - 70px - 1rem) !important;
+        min-height: calc(100vh - 70px - 1rem) !important;
+    }
+
     .Header {
         margin: 1rem 0;
         position: relative;

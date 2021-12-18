@@ -23,14 +23,14 @@ function App({ Component, pageProps }) {
             <MouseParallaxChild
                 factorX={0.02}
                 factorY={0.025}
-                className="Header"
+                className="Header Parallax"
             >
                 <Header />
             </MouseParallaxChild>
             <MouseParallaxChild
                 factorX={0.03}
                 factorY={0.05}
-                className="Content"
+                className="Content Parallax"
             >
                 <AnimatePresence exitBeforeEnter>
                     <motion.div
@@ -57,7 +57,7 @@ function App({ Component, pageProps }) {
                 factorX={0.01}
                 factorY={0.0125}
                 inverted
-                className="Background"
+                className="Background Parallax"
             >
                 <Background />
             </MouseParallaxChild>

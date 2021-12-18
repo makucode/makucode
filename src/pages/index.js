@@ -61,7 +61,7 @@ export default function Home() {
                             <Paragraph
                                 texts={[
                                     "These are some of the technologies I love working with,",
-                                    "but I also love to learn new ones.",
+                                    "but I also love to try out new ones.",
                                 ]}
                             />
                         </div>

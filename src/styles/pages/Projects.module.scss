@@ -70,7 +70,13 @@
     transform: rotate(90deg);
 }
 
-@media only screen and (max-width: $hl) {
+@media only screen and (max-width: $l) {
+    .ProjectsNav {
+        bottom: 2rem;
+    }
+}
+
+@media only screen and (max-height: $hl) {
     .ProjectsNav {
         bottom: 2rem;
     }

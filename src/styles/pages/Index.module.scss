@@ -81,6 +81,8 @@
         fill: $light;
         stroke: $light;
         transition: $transNormal;
+        flex-wrap: wrap;
+        row-gap: 1rem;
     }
 
     .IndexTechnologiesIcon {
@@ -157,5 +159,41 @@
     to {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: $s) {
+    .Index {
+        display: flex;
+        justify-content: center;
+    }
+
+    .IndexContainer {
+        height: fit-content;
+        width: 90vw;
+    }
+
+    .IndexCaption {
+        width: 90vw;
+    }
+
+    .IndexAboutContent {
+        flex-direction: column;
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: $xs) {
+    .IndexHeading {
+        font-size: 1.25rem;
+        span:nth-child(2) {
+            margin-left: auto;
+        }
+    }
+}
+
+@media only screen and (max-height: $hm) {
+    .IndexContainer {
+        height: fit-content;
     }
 }

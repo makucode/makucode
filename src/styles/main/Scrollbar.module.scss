@@ -42,3 +42,15 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: $s) {
+    .Scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: $hm) {
+    .Scrollbar {
+        display: none;
+    }
+}

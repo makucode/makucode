@@ -90,8 +90,116 @@
     }
 }
 
+// Burger Menu / Close
+
+.HeaderBurger,
+.HeaderClose {
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transform: scale(0.995);
+    opacity: 0;
+
+    animation: buttonIn $fastInSlowOut 0.5s forwards;
+}
+
+.HeaderBurgerButton,
+.HeaderBurgerButton::before,
+.HeaderBurgerButton::after {
+    display: block;
+    background-color: $light;
+    height: 7px;
+    width: 7px;
+    border-radius: 50px;
+    transition: $transNormal;
+}
+
+.HeaderBurgerButton::before,
+.HeaderBurgerButton::after {
+    position: absolute;
+    content: "";
+}
+
+.HeaderBurgerButton::before {
+    transform: translateX(-14px);
+}
+
+.HeaderBurgerButton::after {
+    transform: translateX(13px);
+}
+
+.HeaderBurgerButton:active:before,
+.HeaderBurgerButton:active:after {
+    transform: translateX(0);
+}
+
+.HeaderCloseButton,
+.HeaderCloseButton::before {
+    display: block;
+    background-color: $light;
+    height: 3px;
+    width: 34px;
+    border-radius: 50px;
+    transform: rotate(45deg);
+}
+
+.HeaderCloseButton::before {
+    position: absolute;
+    content: "";
+}
+
+.HeaderCloseButton::before {
+    transform: rotate(-90deg);
+}
+
+@keyframes buttonIn {
+    from {
+        transform: scale(0.995);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// Responsiveness
+
 @media only screen and (max-width: $s) {
     .Header {
         width: 90vw;
+    }
+
+    .HeaderLinksContainer {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: $dark;
+        opacity: 0;
+        transform: translateX(100%);
+        z-index: 10;
+        transition: all $fastInSlowOut 0.5s;
+    }
+
+    .HeaderLinks {
+        flex-direction: column;
+        row-gap: 2rem;
+        font-size: 1.25rem;
+    }
+
+    .NavOpen {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
