@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import NextIcon from "../icons/NextIcon";
 import { fadeInUp } from "../../utils/animations";
 import styles from "../../styles/projects/Project.module.scss";
 
@@ -9,9 +8,23 @@ const Project = ({ name, text, imgs, alts, icons, url }) => {
     const [isHover, setIsHover] = useState(false);
     const imgAnimations = fadeInUp;
 
+    const [sectionsIn, setSectionsIn] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setSectionsIn(true);
+        }, 100);
+    }, []);
+
     return (
         <div className={styles.Project}>
-            <div className={styles.ProjectInfo}>
+            <div
+                className={
+                    styles.ProjectInfo +
+                    " " +
+                    (sectionsIn ? styles.SectionsIn : "")
+                }
+            >
                 <h3>{name}</h3>
                 <p>{text}</p>
                 <div className={styles.ProjectTechnologies}>
@@ -26,7 +39,11 @@ const Project = ({ name, text, imgs, alts, icons, url }) => {
                 </div>
             </div>
             <div
-                className={styles.ProjectImg}
+                className={
+                    styles.ProjectImg +
+                    " " +
+                    (sectionsIn ? styles.SectionsIn : "")
+                }
                 onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
             >

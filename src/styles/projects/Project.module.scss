@@ -11,7 +11,10 @@
 }
 
 .ProjectImg {
-    animation: projectInRight $fastInSlowOut 0.5s forwards;
+    opacity: 0;
+    transform: translateX(50%);
+
+    transition: all $fastInSlowOut 0.5s;
 
     img {
         border-radius: $radiusL;
@@ -19,7 +22,10 @@
 }
 
 .ProjectInfo {
-    animation: projectInLeft $fastInSlowOut 0.5s forwards;
+    opacity: 0;
+    transform: translateX(-50%);
+
+    transition: all $fastInSlowOut 0.5s;
 
     h3 {
         font-size: 2.5rem;
@@ -54,6 +60,11 @@
     }
 }
 
+.SectionsIn {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 @keyframes projectInLeft {
     from {
         opacity: 0;
@@ -69,10 +80,6 @@
     from {
         opacity: 0;
         transform: translateX(50%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0%);
     }
 }
 
