@@ -131,3 +131,17 @@ a:hover {
     width: max-content;
     font-size: 0.825rem;
 }
+
+@media only screen and (max-width: $s) {
+    .Header {
+        margin: 1rem 0;
+        position: relative;
+    }
+}
+
+@media only screen and (max-height: $hm) {
+    .Header {
+        margin: 1rem 0;
+        position: relative;
+    }
+}

@@ -115,3 +115,33 @@
         transform: scale(1);
     }
 }
+
+@media only screen and (max-width: $s) {
+    .ContactContainer {
+        height: calc(100vh - 70px - 2rem);
+    }
+
+    .ContactContact {
+        font-size: 1rem;
+
+        p {
+            margin-left: 1rem;
+        }
+
+        a {
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-height: $hm) {
+    .ContactContainer {
+        height: calc(100vh - 70px - 2rem);
+    }
+}
+
+@media only screen and (max-height: $hs) {
+    .ContactContact {
+        font-size: 1rem;
+    }
+}

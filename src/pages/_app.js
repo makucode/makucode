@@ -27,7 +27,11 @@ function App({ Component, pageProps }) {
             >
                 <Header />
             </MouseParallaxChild>
-            <MouseParallaxChild factorX={0.03} factorY={0.05}>
+            <MouseParallaxChild
+                factorX={0.03}
+                factorY={0.05}
+                className="Content"
+            >
                 <AnimatePresence exitBeforeEnter>
                     <motion.div
                         key={router.route}

@@ -89,3 +89,9 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: $s) {
+    .Header {
+        width: 90vw;
+    }
+}

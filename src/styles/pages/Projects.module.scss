@@ -69,3 +69,9 @@
 .ProjectsNavR {
     transform: rotate(90deg);
 }
+
+@media only screen and (max-width: $hl) {
+    .ProjectsNav {
+        bottom: 2rem;
+    }
+}
