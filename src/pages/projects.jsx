@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
-import Project from "../components/projects/project";
+import Project from "../components/projects/Project";
 import ChevronIcon from "../components/icons/ChevronIcon";
 import projects from "../assets/projects";
 import { fadeInScale } from "../utils/animations";

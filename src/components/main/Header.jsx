@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../../styles/main/Header.module.scss";
 
 const Header = () => {
     const router = useRouter();
+
+    const [stopBlink, setStopBlink] = useState(false);
 
     console.log(router.pathname);
 
@@ -14,12 +16,18 @@ const Header = () => {
         { title: "Contact", url: "/contact" },
     ];
 
+    useEffect(() => {
+        setTimeout(() => setStopBlink(true), 3500);
+    }, []);
+
     return (
         <nav className={styles.Header}>
             <Link href="/" passHref>
                 <a className={styles.HeaderTitle}>
                     <span>$</span>
-                    <h1>makucode</h1>
+                    <h1 className={stopBlink ? styles.StopBlink : ""}>
+                        makucode
+                    </h1>
                 </a>
             </Link>
             <ul className={styles.HeaderLinks}>
