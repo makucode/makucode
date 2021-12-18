@@ -34,20 +34,20 @@ export default function Contact() {
                         <span>= &#10100;</span>
                     </div>
                     <p>
-                        <span className={styles.Sub}>name:</span> 'Maximilian
-                        Friedrich'
+                        <span className={styles.Sub}>name:</span>{" "}
+                        &apos;Maximilian Friedrich&apos;
                     </p>
                     <Link href="mailto:makucode@gmail.com">
                         <a>
                             <span className={styles.Sub}>email:</span>{" "}
-                            'makucode@gmail.com'
+                            &apos;makucode@gmail.com&apos;
                             <CopyIcon click={copyMail} />
                         </a>
                     </Link>
                     <Link href="tel:+4917664633526">
                         <a>
-                            <span className={styles.Sub}>tel:</span> '0176 646
-                            335 26'
+                            <span className={styles.Sub}>tel:</span> &apos;0176
+                            646 335 26&apos;
                             <CopyIcon click={copyTel} />
                         </a>
                     </Link>
