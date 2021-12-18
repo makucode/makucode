@@ -4,7 +4,7 @@ Web Developer from Hannover, Germany.
 Currently focusing on Fullstack-Dev with React and Node.  
 Always interested in new projects.
 
-## makuco.de - Homepage/Portfolio
+# Homepage/Portfolio
 
 [makuco.de](makuco.de)
 
