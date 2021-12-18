@@ -7,13 +7,13 @@ import {
 import Background from "../components/main/Background";
 import Header from "../components/main/Header";
 import useKeepStyles from "../hooks/useKeepStyles";
-import { fadeInBlur } from "../utils/animations";
+import { fadeInScale } from "../utils/animations";
 import "../styles/main.scss";
 
 function App({ Component, pageProps }) {
     const router = useRouter();
 
-    const animations = fadeInBlur;
+    const animations = fadeInScale;
 
     //FIX FOR FLASHING UNSTYLED COMPONENTS ON PAGE CHANGE
     useKeepStyles();

@@ -31,14 +31,17 @@ export const fadeInBlur = {
 export const fadeInScale = {
     pageInitial: {
         opacity: 0,
-        transform: "scale(1)",
+        filter: "blur(0)",
+        transform: "scale(0.9)",
     },
     pageAnimate: {
         opacity: 1,
+        filter: "blur(0)",
         transform: "scale(1)",
     },
     pageExit: {
         opacity: 0,
-        transform: "scale(0.95)",
+        filter: "blur(3px)",
+        transform: "scale(0.9)",
     },
 };
