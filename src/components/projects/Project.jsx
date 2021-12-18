@@ -47,6 +47,7 @@ const Project = ({ name, text, imgs, alts, icons, url }) => {
                                 src={imgs[0]}
                                 alt={alts[0]}
                                 layout="responsive"
+                                objectFit="contain"
                                 priority
                             />
                         )}
@@ -55,6 +56,7 @@ const Project = ({ name, text, imgs, alts, icons, url }) => {
                                 src={imgs[1]}
                                 alt={alts[1]}
                                 layout="responsive"
+                                objectFit="contain"
                                 priority
                             />
                         )}
