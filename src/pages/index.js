@@ -116,8 +116,9 @@ export default function Home() {
                         <AlocasiaIcon />
                         <Paragraph
                             texts={[
-                                "When I'm not coding, I like to look at and care for my collection of exotic houseplants.",
-                                "Since I spend most of my time in front of a computer screen, having nature right next to me helps grounding myself in a way.",
+                                "When I'm not coding, I like to look at and take care of my collection of exotic houseplants.",
+                                "Since I spend most of my time in front of a computer screen,",
+                                "having a piece of nature right next to me helps grounding myself in a way.",
                             ]}
                         />
                     </div>

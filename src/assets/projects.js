@@ -13,7 +13,7 @@ import MongoIcon from "../components/icons/MongoIcon";
 const projects = [
     {
         name: "Fensterblatt Digital",
-        text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        text: "Fensterblatt Digital is a web design and development project I'm running with a good friend of mine. We teamed up to create beautiful, modern and user-friendly websites and web apps for local businesses.",
         imgs: [fensterblatt1, fensterblatt2],
         alts: [
             "Screenshot of the landing page of Fensterblatt Digital",
@@ -24,7 +24,7 @@ const projects = [
     },
     {
         name: "bug.log",
-        text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        text: "The idea behind bug.log is to provide a simple and intuitive platform to track bugs for small developer teams. It features user authentication, authorization and roles with user management options for admins.",
         imgs: [bug1, bug2],
         alts: [
             "Screenshot of the landing page of Fensterblatt Digital",
@@ -40,7 +40,7 @@ const projects = [
     },
     {
         name: "Sloth - A Todo-List-App",
-        text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        text: "I made Sloth to practice development with the MERN-Stack. It's a simple CRUD app featuring user authentication.",
         imgs: [sloth1, sloth2],
         alts: [
             "Screenshot of the landing page of Fensterblatt Digital",
