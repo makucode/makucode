@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import ChevronIcon from "../icons/ChevronIcon";
+import GithubIcon from "../icons/GithubIcon";
 import { fadeInUp } from "../../utils/animations";
 import styles from "../../styles/projects/Project.module.scss";
 
-const Project = ({ name, text, imgs, alts, icons, url }) => {
+const Project = ({ name, text, imgs, alts, icons, url, githubUrl }) => {
     const [isHover, setIsHover] = useState(false);
     const imgAnimations = fadeInUp;
 
@@ -26,6 +29,20 @@ const Project = ({ name, text, imgs, alts, icons, url }) => {
                 }
             >
                 <h3>{name}</h3>
+                <div className={styles.ProjectLinks}>
+                    <Link href={url} passHref>
+                        <a className={styles.ProjectLink1}>
+                            <ChevronIcon />
+                            Visit live page
+                        </a>
+                    </Link>
+                    <Link href={githubUrl} passHref>
+                        <a className={styles.ProjectLink2}>
+                            <GithubIcon noHover />
+                            View source code
+                        </a>
+                    </Link>
+                </div>
                 <p>{text}</p>
                 <div className={styles.ProjectTechnologies}>
                     {icons.map((Icon, idx) => (

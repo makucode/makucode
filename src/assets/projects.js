@@ -21,6 +21,7 @@ const projects = [
         ],
         icons: [<NextIcon key="nextIcon" />],
         url: "https://fensterblatt.digital/",
+        githubUrl: "https://github.com/makucode/fensterblatt-digital",
     },
     {
         name: "bug.log",
@@ -36,7 +37,8 @@ const projects = [
             <NodeIcon key="nodeIcon" />,
             <MongoIcon key="mongoIcon" />,
         ],
-        url: "https://fensterblatt.digital/",
+        url: "https://bug-log-mern.herokuapp.com/",
+        githubUrl: "https://github.com/makucode/bug.log",
     },
     {
         name: "Sloth - A Todo-List-App",
@@ -52,7 +54,8 @@ const projects = [
             <NodeIcon key="nodeIcon" />,
             <MongoIcon key="mongoIcon" />,
         ],
-        url: "https://fensterblatt.digital/",
+        url: "https://sloth-mern.herokuapp.com/",
+        githubUrl: "https://github.com/makucode/sloth",
     },
 ];
 
