@@ -170,7 +170,12 @@
 
     .IndexContainer {
         height: fit-content;
+        margin-bottom: 4rem;
         width: 90vw;
+    }
+
+    .IndexHeading {
+        margin-top: -3rem;
     }
 
     .IndexCaption {
@@ -195,5 +200,6 @@
 @media only screen and (max-height: $hm) {
     .IndexContainer {
         height: fit-content;
+        margin-bottom: 4rem;
     }
 }

@@ -173,6 +173,15 @@
 @media only screen and (max-width: $s) {
     .Header {
         width: 90vw;
+        padding: 0 1rem;
+        height: fit-content;
+    }
+
+    .HeaderTitle {
+        h1,
+        span {
+            font-size: 1.25rem;
+        }
     }
 
     .HeaderLinksContainer {

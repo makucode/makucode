@@ -25,7 +25,7 @@ const projects = [
     },
     {
         name: "bug.log",
-        text: "The idea behind bug.log is to provide a simple and intuitive platform to track bugs for small developer teams. It features user authentication, authorization and roles, with user management options for admins.",
+        text: "bug.log is a simple and intuitive bug tracking app for small developer teams. It features user authentication, authorization and roles, with user management options for admins.",
         imgs: [bug1, bug2],
         alts: [
             "Screenshot of the landing page of Fensterblatt Digital",
@@ -42,7 +42,7 @@ const projects = [
     },
     {
         name: "Sloth - A Todo-List-App",
-        text: "I made Sloth to practice development with the MERN-Stack. It's a simple CRUD app featuring user authentication.",
+        text: "I made Sloth to practice developing with the MERN-Stack. It's a simple CRUD app featuring user authentication.",
         imgs: [sloth1, sloth2],
         alts: [
             "Screenshot of the landing page of Fensterblatt Digital",
