@@ -26,10 +26,10 @@ const projects = [
     {
         name: "bug.log",
         text: "bug.log is a simple and intuitive bug tracking app for small developer teams. It features user authentication, authorization and roles, with user management options for admins.",
-        imgs: [bug1, bug2],
+        imgs: [bug2, bug1],
         alts: [
-            "Screenshot of the landing page of Fensterblatt Digital",
-            "Screenshot of the projects page of Fensterblatt Digital",
+            "Screenshot of the bug.log dashboard",
+            "Screenshot of the bug.log login screen",
         ],
         icons: [
             <ReactIcon key="reactIcon" />,
@@ -43,11 +43,8 @@ const projects = [
     {
         name: "Sloth - A Todo-List-App",
         text: "I made Sloth to practice developing with the MERN-Stack. It's a simple CRUD app featuring user authentication.",
-        imgs: [sloth1, sloth2],
-        alts: [
-            "Screenshot of the landing page of Fensterblatt Digital",
-            "Screenshot of the projects page of Fensterblatt Digital",
-        ],
+        imgs: [sloth2, sloth1],
+        alts: ["Screenshot of sloth", "Screenshot of the sloth login screen"],
         icons: [
             <ReactIcon key="reactIcon" />,
             <SassIcon key="sassIcon" />,
