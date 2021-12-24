@@ -20,7 +20,7 @@ export default function Contact() {
     return (
         <div className={styles.Contact}>
             <Head>
-                <title>makucode // Contact</title>
+                <title>makucode/contact</title>
                 <meta
                     name="description"
                     content="Hey, I'm Maku, a Web Developer. I love to get to know new people, so feel free to contact me in any way you like."
@@ -53,6 +53,9 @@ export default function Contact() {
                         </a>
                     </Link>
                     <span>&#10101;</span>
+                </div>
+                <div className={styles.Imprint}>
+                    <Link href="/imprint">Imprint</Link>
                 </div>
                 <div className={styles.ContactIcons}>
                     <Link href="https://github.com/makucode" passHref>
