@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <div className={styles.Index}>
             <Head>
-                <title>makucode/home</title>
+                <title>makucode // home</title>
                 <meta
                     name="description"
                     content="Hey, I'm Maku, a Web Developer from Germany. I love working with JavaScript and stuff like React and Node.js."

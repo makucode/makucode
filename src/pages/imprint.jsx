@@ -17,7 +17,7 @@ export default function Imprint() {
     return (
         <div className={styles.Imprint}>
             <Head>
-                <title>makucode/imprint</title>
+                <title>makucode // imprint</title>
                 <meta
                     name="description"
                     content="makuco.de/Imprint - Impressum"

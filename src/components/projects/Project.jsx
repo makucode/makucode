@@ -61,8 +61,8 @@ const Project = ({ name, text, imgs, alts, icons, url, githubUrl }) => {
                     " " +
                     (sectionsIn ? styles.SectionsIn : "")
                 }
-                onMouseEnter={() => setIsHover(true)}
-                onMouseLeave={() => setIsHover(false)}
+                onMouseEnter={() => imgs[1] && setIsHover(true)}
+                onMouseLeave={() => imgs[1] && setIsHover(false)}
             >
                 <AnimatePresence exitBeforeEnter>
                     <motion.div
@@ -86,7 +86,7 @@ const Project = ({ name, text, imgs, alts, icons, url, githubUrl }) => {
                                 priority
                             />
                         )}
-                        {isHover && (
+                        {isHover && imgs[1] && (
                             <Image
                                 src={imgs[1]}
                                 alt={alts[1]}

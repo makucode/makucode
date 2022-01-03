@@ -4,6 +4,7 @@ import sloth1 from "./imgs/project_screenshots/project_sloth_1.png";
 import sloth2 from "./imgs/project_screenshots/project_sloth_2.png";
 import bug1 from "./imgs/project_screenshots/project_bug.log_1.png";
 import bug2 from "./imgs/project_screenshots/project_bug.log_2.png";
+import beatify1 from "../assets/imgs/project_screenshots/project_beatify_1.png";
 import NextIcon from "../components/icons/NextIcon";
 import ReactIcon from "../components/icons/ReactIcon";
 import SassIcon from "../components/icons/SassIcon";
@@ -16,8 +17,8 @@ const projects = [
         text: "Fensterblatt Digital is a web design and development project I'm running with a good friend of mine. We teamed up to create beautiful, modern and user-friendly websites and web apps for local businesses.",
         imgs: [fensterblatt1, fensterblatt2],
         alts: [
-            "Screenshot of the landing page of Fensterblatt Digital",
-            "Screenshot of the projects page of Fensterblatt Digital",
+            "Screenshot of the Fensterblatt Digital landing page",
+            "Screenshot of the Fensterblatt Digital projects page",
         ],
         icons: [<NextIcon key="nextIcon" />],
         url: "https://fensterblatt.digital/",
@@ -39,6 +40,15 @@ const projects = [
         ],
         url: "https://bug-log-mern.herokuapp.com/",
         githubUrl: "https://github.com/makucode/bug.log",
+    },
+    {
+        name: "beatify",
+        text: "Audio engineering has been a huge passion of mine in the past, so I wanted to try out something to connect my love for web development and electronic music. beatify is a drum machine with drumpads and a simple step sequencer to program short drum loops.",
+        imgs: [beatify1],
+        alts: ["Screenshot of beatify"],
+        icons: [<ReactIcon key="reactIcon" />, <SassIcon key="sassIcon" />],
+        url: "https://beatify-drum-machine.herokuapp.com",
+        githubUrl: "https://github.com/makucode/beatify",
     },
     {
         name: "Sloth - A Todo-List-App",

@@ -21,7 +21,7 @@ export default function Projects() {
     return (
         <div className={styles.Projects}>
             <Head>
-                <title>makucode/projects</title>
+                <title>makucode // projects</title>
                 <meta
                     name="description"
                     content="Hey, I'm Maku, a Web Developer. These are some of the projects I worked on."
