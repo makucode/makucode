@@ -26,39 +26,68 @@ export default function Imprint() {
 
             <main className={styles.ImprintContainer}>
                 <div className={styles.ImprintImprint}>
-                    <div>
-                        <span className={styles.Const}>const</span>{" "}
-                        <span className={styles.Name}>imprint</span>{" "}
-                        <span>= &#10100;</span>
-                    </div>
+                    <div>&#123;</div>
                     <p>
-                        <span className={styles.Sub}>name:</span>{" "}
-                        &apos;Maximilian Friedrich&apos;
+                        <span className={styles.Sub}>
+                            <span className={styles.Name}>
+                                &quot;name&quot;
+                            </span>
+                            :
+                        </span>{" "}
+                        &quot;Maximilian Friedrich&quot;
                     </p>
                     <p>
-                        <span className={styles.Sub}>address:</span>{" "}
-                        &apos;Kötnerholzweg 38&apos;
+                        <span className={styles.Sub}>
+                            {" "}
+                            <span className={styles.Name}>
+                                &quot;address&quot;
+                            </span>
+                            :
+                        </span>{" "}
+                        &quot;Kötnerholzweg 38&quot;
                     </p>
                     <p>
-                        <span className={styles.Sub}>postCode:</span>{" "}
-                        &apos;30451&apos;
+                        <span className={styles.Sub}>
+                            {" "}
+                            <span className={styles.Name}>
+                                &quot;postCode&quot;
+                            </span>
+                            :
+                        </span>{" "}
+                        &quot;30451&quot;
                     </p>
                     <p>
-                        <span className={styles.Sub}>city:</span>{" "}
-                        &apos;Hannover&apos;
+                        <span className={styles.Sub}>
+                            {" "}
+                            <span className={styles.Name}>
+                                &quot;city&quot;
+                            </span>
+                            :
+                        </span>{" "}
+                        &quot;Hannover&quot;
                     </p>
                     <Link href="mailto:makucode@gmail.com">
                         <a>
-                            <span className={styles.Sub}>email:</span>{" "}
-                            &apos;makucode@gmail.com&apos;
-                            <CopyIcon click={copyMail} />
+                            <span className={styles.Sub}>
+                                {" "}
+                                <span className={styles.Name}>
+                                    &quot;email&quot;
+                                </span>
+                                :
+                            </span>{" "}
+                            &quot;makucode@gmail.com&quot;
                         </a>
                     </Link>
                     <Link href="tel:+4917664633526">
                         <a>
-                            <span className={styles.Sub}>tel:</span> &apos;+49
-                            176 646 335 26&apos;
-                            <CopyIcon click={copyTel} />
+                            <span className={styles.Sub}>
+                                {" "}
+                                <span className={styles.Name}>
+                                    &quot;tel&quot;
+                                </span>
+                                :{" "}
+                            </span>
+                            &quot;+49 176 646 335 26&quot;
                         </a>
                     </Link>
                     <span>&#10101;</span>

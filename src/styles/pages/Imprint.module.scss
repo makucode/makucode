@@ -21,12 +21,14 @@
     font-size: 1.5rem;
 
     p {
-        font-weight: 600;
         display: flex;
         align-items: center;
         column-gap: 0.25rem;
         margin: 0.5rem 0;
         margin-left: 4rem;
+
+        color: $orange;
+        font-weight: 600;
     }
 
     a {
@@ -34,14 +36,14 @@
         margin: 0.5rem 0;
         font-weight: 600;
         margin-left: 4rem;
-        color: $light;
+        color: $orange;
 
         display: flex;
         align-items: center;
     }
 
     a:hover {
-        color: $orange;
+        color: $mid;
     }
 
     a:last-of-type {
