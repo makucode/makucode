@@ -2,10 +2,11 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 import Project from "../components/projects/Project";
-import ChevronIcon from "../components/icons/ChevronIcon";
+import ChevronRightIcon from "../components/icons/ChevronRightIcon";
 import projects from "../assets/projects";
 import { fadeInScale } from "../utils/animations";
 import styles from "../styles/pages/Projects.module.scss";
+import ChevronLeftIcon from "../components/icons/ChevronLeftIcon";
 
 export default function Projects() {
     const [activeProject, setActiveProject] = useState(0);
@@ -46,7 +47,7 @@ export default function Projects() {
                         className={styles.ProjectsNavL}
                         onClick={() => handleProjectChange(false)}
                     >
-                        <ChevronIcon />
+                        <ChevronLeftIcon />
                     </div>
                     {projects.map((project, idx) => (
                         <span
@@ -61,7 +62,7 @@ export default function Projects() {
                         className={styles.ProjectsNavR}
                         onClick={() => handleProjectChange(true)}
                     >
-                        <ChevronIcon />
+                        <ChevronRightIcon />
                     </div>
                 </div>
             </main>

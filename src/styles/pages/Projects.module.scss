@@ -62,14 +62,6 @@
     }
 }
 
-.ProjectsNavL {
-    transform: rotate(270deg);
-}
-
-.ProjectsNavR {
-    transform: rotate(90deg);
-}
-
 @media only screen and (max-width: $l) {
     .ProjectsNav {
         bottom: 2rem;
