@@ -8,6 +8,6 @@ Always interested in new projects.
 
 # Homepage/Portfolio
 
-[makuco.de](https://makucode.herokuapp.com/)
+[makuco.de](https://makuco.de/)
 
 Built with Next.js
