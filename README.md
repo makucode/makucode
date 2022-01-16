@@ -1,8 +1,8 @@
 # makucode
 
-Web Developer from Hannover, Germany.  
-Currently focusing on Fullstack-Dev with React and Node.  
-Always interested in new projects.
+I'm a Web Developer from Hannover, Germany.  
+Right now I'm focusing on working with React and Node.js, but I also love to try out new technologies.
+Always interested in collaborating on awesome projects.
 
 **Contact: [makucode@gmail.com](makucode@gmail.com)**
 
@@ -10,4 +10,4 @@ Always interested in new projects.
 
 [makuco.de](https://makuco.de/)
 
-Built with Next.js
+Built with Next.js and SASS, deployed on netlify.

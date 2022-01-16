@@ -3,10 +3,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 import Project from "../components/projects/Project";
 import ChevronRightIcon from "../components/icons/ChevronRightIcon";
+import ChevronLeftIcon from "../components/icons/ChevronLeftIcon";
 import projects from "../assets/projects";
 import { fadeInScale } from "../utils/animations";
 import styles from "../styles/pages/Projects.module.scss";
-import ChevronLeftIcon from "../components/icons/ChevronLeftIcon";
 
 export default function Projects() {
     const [activeProject, setActiveProject] = useState(0);
