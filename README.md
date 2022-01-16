@@ -13,7 +13,7 @@ Always interested in collaborating on awesome projects.
 
 Built with Next.js and SASS, deployed on Netlify.
 
-### Other Links
+## Other Links
 
 [LinkedIn](https://www.linkedin.com/in/maximilian-friedrich-266168226/)  
 [XING](https://www.xing.com/profile/Maximilian_Friedrich53/cv)  
