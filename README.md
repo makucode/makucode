@@ -9,7 +9,7 @@ Always interested in collaborating on awesome projects.
 
 ## Homepage/Portfolio
 
-[makuco.de](https://makuco.de/)
+**[makuco.de](https://makuco.de/)**
 
 Built with Next.js and SASS, deployed on Netlify.
 

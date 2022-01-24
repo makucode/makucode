@@ -5,8 +5,6 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    border: $borderMain;
-    border-radius: $radiusL;
     padding: 0 2rem;
     width: 80vw;
 }
@@ -42,7 +40,9 @@
 .HeaderLinks {
     height: fit-content;
     display: flex;
-    column-gap: 1.5rem;
+    column-gap: 2rem;
+
+    transform: translateY(10px); // hotfix
 
     li {
         opacity: 0;
@@ -52,14 +52,8 @@
     a {
         display: block;
         width: 100%;
-    }
-}
 
-.NavActive {
-    list-style-type: disc;
-
-    a {
-        color: $light;
+        font-weight: 500;
     }
 }
 
@@ -165,6 +159,54 @@
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+// Hover & Active Styles
+
+@media only screen and (min-width: $s) {
+    .HeaderLink:hover,
+    .NavActive {
+        span {
+            position: relative;
+            color: $dark;
+            z-index: 10;
+
+            transition: all ease-in-out 0.25s;
+        }
+    }
+
+    .HeaderLink::after {
+        display: block;
+        width: 100%;
+        height: 0;
+        content: "";
+
+        padding: 0.25rem 0.75rem;
+
+        z-index: -5;
+        transform: translateY(-82%) translateX(-12.5px);
+
+        border-radius: 5px;
+
+        transition: all ease-in-out 0.25s;
+    }
+
+    .HeaderLink:hover::after,
+    .NavActive a::after {
+        height: 1.1rem;
+        background-color: $light;
+    }
+}
+
+@media only screen and (max-width: $s) {
+    .NavActive {
+        list-style: disc;
+        color: $light;
+
+        span {
+            color: $light;
+        }
     }
 }
 

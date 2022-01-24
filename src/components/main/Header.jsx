@@ -71,7 +71,11 @@ const Header = () => {
                             }
                             onClick={() => setNavOpen(false)}
                         >
-                            <Link href={link.url}>{link.title}</Link>
+                            <Link href={link.url}>
+                                <a className={styles.HeaderLink}>
+                                    <span>{link.title}</span>
+                                </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
