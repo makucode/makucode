@@ -15,6 +15,6 @@ Built with Next.js and SASS, deployed on Netlify.
 
 ## Other Links
 
-<img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" width="200" />[LinkedIn](https://www.linkedin.com/in/maximilian-friedrich-266168226/)  
+[LinkedIn](https://www.linkedin.com/in/maximilian-friedrich-266168226/)  
 [XING](https://www.xing.com/profile/Maximilian_Friedrich53/cv)  
 [Instagram](https://www.instagram.com/makushipowers/)
