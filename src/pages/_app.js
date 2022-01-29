@@ -49,10 +49,6 @@ function App({ Component, pageProps }) {
                 </AnimatePresence>
             </MouseParallaxChild>
 
-            {/*             <MouseParallaxChild factorX={0.02} factorY={0.025}>
-                <Footer />
-            </MouseParallaxChild> */}
-
             <MouseParallaxChild
                 factorX={0.01}
                 factorY={0.0125}

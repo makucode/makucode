@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import ChevronIcon from "../icons/ChevronIcon";
+import ChevronRightIcon from "../icons/ChevronRightIcon";
 import GithubIcon from "../icons/GithubIcon";
 import { fadeInUp } from "../../utils/animations";
 import styles from "../../styles/projects/Project.module.scss";
@@ -32,7 +32,7 @@ const Project = ({ name, text, imgs, alts, icons, url, githubUrl }) => {
                 <div className={styles.ProjectLinks}>
                     <Link href={url} passHref>
                         <a className={styles.ProjectLink1}>
-                            <ChevronIcon />
+                            <ChevronRightIcon />
                             Visit live page
                         </a>
                     </Link>
